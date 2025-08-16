@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warcraft</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Видео на весь экран (без полос) */
+        .header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .wow-vid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center; /* Центрируем видео */
+        }
+        .header-container-main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        .name {
+            color: white;
+            text-shadow: 0 0 5px black;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        .download {
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+            border: none;
+            padding: 12px 24px;
+            font-size: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .download:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* Картинка сразу после видео (без отступа) */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('img/world-of-warcraft-the-war-within.webp') no-repeat center center;
+            background-size: cover;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Затемнение для текста */
+        }
+        .hero-container-main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 80%;
+            z-index: 1;
+        }
+        .description {
+            color: white;
+            text-shadow: 0 0 5px black;
+            font-size: 32px;
+        }
+        .hero-container-main p {
+            color: white;
+            text-shadow: 0 0 3px black;
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+        /* Кнопки под картинкой */
+        .about {
+            padding: 40px 0;
+            text-align: center;
+            background: black;
+        }
+        .about-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .tg, .ds {
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 24px;
+            font-size: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .tg:hover {
+            background-color: #0088cc;
+            color: white;
+        }
+        .ds:hover {
+            background-color: #5865F2;
+            color: white;
+        }
+        footer {
+            margin-top: 40px;
+        }
+
+        /* Адаптив для мобильных */
+        @media (max-width: 576px) {
+            .name, .download, .tg, .ds {
+                font-size: 24px;
+            }
+            .description {
+                font-size: 28px;
+            }
+            .hero-container-main p {
+                font-size: 18px;
+            }
+            .about-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Видео без полос -->
+    <section class="header">
+        <video class="wow-vid" src="video/WoW.mp4" loop muted autoplay></video>
+        <div class="header-container-main">
+            <h2 class="name">World of Warcraft</h2>
+            <button class="download">Download</button>
+        </div>
+    </section>
+
+    <!-- Картинка с текстом (без отступа сверху) -->
+    <section class="hero">
+        <div class="hero-container-main">
+            <h2 class="description">Description</h2>
+            <p>
+                World of Warcraft is a MMORPG developed and published by Blizzard Entertainment...
+                <br><br>
+                <strong>Attention! This site is not official. All trademarks belong to Blizzard Entertainment.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Кнопки -->
+    <section class="about">
+        <div class="about-container">
+            <button class="tg">Telegram</button>
+            <button class="ds">Discord</button>
+        </div>
+        <footer>
+            &copy; 2025 Banyk Studio. All rights reserved.
+        </footer>
+    </section>
+</body>
+</html>

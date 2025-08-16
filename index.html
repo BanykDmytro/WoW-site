@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, initial-scale=0.5">
+    <title>World of Warcraft</title>
+</head>
+<body>
+    <section class="header">
+        <div class="header-container-vid">
+            <video class="wow-vid" src="video/WoW.mp4" loop muted autoplay></video>
+            <div class="header-placeholder"></div>
+        </div>
+        <div class="header-container-main">
+            <h2 class="name">World of Warcraft</h2>
+            <button class="download">Download</button>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero-container-img">
+            <img class="img" src="img/world-of-warcraft-the-war-within.webp">
+        </div>
+        <div class="hero-container-main">
+            <h2 class="description">Description</h2>
+            <p>World of Warcraft is a MMORPG developed and published by Blizzard Entertainment. Set in the fantasy world of Azeroth, it offers players the chance to create unique characters, choose from different races and classes, and embark on epic adventures. Players can explore vast continents, complete quests, fight powerful monsters, join guilds, and take part in large-scale player-versus-environment (PvE) and player-versus-player (PvP) battles.
+
+The game’s story is rich with lore, featuring ancient conflicts, powerful heroes, and legendary villains. World of Warcraft continuously evolves through expansions, each adding new lands, dungeons, and challenges. It’s a blend of exploration, combat, teamwork, and storytelling, making it one of the most iconic and long-lasting games in online gaming history.
+<br>
+<strong>Attention! This site is not official. All trademarks, images, and content belong to Blizzard Entertainment.</strong></p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-container">
+            <button class="tg">Telegramm</button>
+            <button class="ds">Discord</button>
+        </div>
+        <footer style="text-align: center; padding: 10px; font-size: 14px; color: #777;">
+    &copy; 2025 Banyk Studio. All rights reserved.
+        </footer>
+    </section>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+        }
+        .wow-vid {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .header-container-vid {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .name {
+            position: absolute;
+            transform: translateX(-50%);
+            color: white;
+            text-shadow: 0 0 5px black;
+            left: 50%;
+            top: 40%;
+            font-size: 45px;
+        }
+        .download {
+            position: absolute;
+            transform: translateX(-50%);
+            background-color: white;
+            color: black;
+            left: 50%;
+            border-radius: 6px;
+            border: 1px solid black;
+            padding: 12px 24px;
+            font-size: 40px;
+            cursor: pointer;
+            top: 65%;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .download:hover {
+            background-color: green;
+            color: white;
+        }
+        .img {
+            position: relative;
+            width: 100%;
+            height: auto; 
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .hero-container-img {
+            position: relative; 
+        }
+
+        .description {
+            position: absolute;
+            top: 135%; 
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-shadow: 0 0 5px black;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            position: absolute;
+            top: 150%; 
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-shadow: 0 0 5px black;
+            font-size: 25px;
+            text-align: center;
+            max-width: 80%; 
+        }
+        .about-container {
+            position: relative;
+            transform: translateX(-50%);
+            display: flex;
+            left: 50%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .ds {
+            top: 185%;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 12px 24px;
+            font-size: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 20px;
+        }
+        .ds:hover {
+            background-color: rgb(2, 6, 237);
+            color: white;
+        }
+        .tg {
+            top: 185%;
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 12px 24px;
+            font-size: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 20px;
+        }
+        .tg:hover {
+            background-color: rgb(2, 174, 237);
+            color: white;
+        }
+    </style>
+</body>
+</html>
